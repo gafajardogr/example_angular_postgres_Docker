@@ -1,0 +1,19 @@
+{
+  "name": "clave-credential-vault",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c green,cyan \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev --workspace credential-vault-api",
+    "dev:web": "npm run start --workspace credential-vault-web",
+    "build:api": "npm run build --workspace credential-vault-api",
+    "build:web": "npm run build --workspace credential-vault-web",
+    "build": "npm run build:api && npm run build:web",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
