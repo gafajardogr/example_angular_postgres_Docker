@@ -1,4 +1,5 @@
 # Clave
+<img width="1294" height="872" alt="Captura de pantalla 2026-10-06 113511" src="https://github.com/user-attachments/assets/fcc1dda5-d99b-4557-bcb8-1ad863b38284" />
 
 Gestor privado de credenciales con Angular, Fastify y PostgreSQL. Configura una llave maestra, inicia sesión y administra accesos con campos personalizados.
 
